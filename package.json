@@ -15,7 +15,8 @@
   "author": "Ganesh Ghode",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "prettier": "^3.2.4"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
