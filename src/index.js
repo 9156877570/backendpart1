@@ -11,10 +11,18 @@
 
 import connectData from "./db/index.js";
 import dotenv from "dotenv";
+
 dotenv.config({
     path:"./env"
 })
-connectData()
+connectData().then(()=>{
+    // app.listen(process.env.PORT || 8000,()=>{
+    //     console.log("Port is running on :8000 ")
+    // })
+    console.log(`All Good `)
+}).catch((error)=>{
+    console.log("Error Occured : ",console.error)
+})
 
 
 
